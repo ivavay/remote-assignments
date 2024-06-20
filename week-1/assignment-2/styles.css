@@ -20,7 +20,7 @@ ul {
     list-style: none;
     display: flex;
 }
-li {
+li.nav-item {
     margin-right: 48px;
 }
 .logo {
@@ -33,7 +33,6 @@ li {
     justify-content: center;
     width: 120px;
     align-self: center;
-
 }
 header {
     background-color: #CCDDEE;
@@ -41,27 +40,71 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    padding: 18px 0;
 }
 .row {
     display: flex;
     justify-content: center;
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
-
 .card {
     background-color: #8899AA;
-    width: 30vw;
+    width: 27vw;
     height: 20vh;
     margin: 0 40px 40px 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 12px 0;
+    align-items: flex-start;
+}
+
+/* For screen sizes between 500px and 800px */ 
+@media (min-width: 500px) and (max-width: 800px) {
+    .nav-item {
+        display: none;
+        visibility: hidden;
+    }
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        height: 18px;
+        justify-content: space-between;
+    }
+    .line {
+        width: 32px;
+        border: 1px solid black;
+    }
+  }
+
+/* For screen sizes less than 500px */ 
+@media (max-width: 500px) {
+    .nav-item {
+        display: none;
+        visibility: hidden;
+    }
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        height: 18px;
+        justify-content: space-between;
+    }
+    .line {
+        width: 32px;
+        border: 1px solid black;
+    }
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 80vw;
+    }
 }
