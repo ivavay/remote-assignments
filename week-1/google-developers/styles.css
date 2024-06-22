@@ -10,6 +10,10 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+.desktop-nav {
+    display: none;
+    visibility: hidden;
+}
 .menu {
     width: 26px;
 }
@@ -169,4 +173,71 @@ h4 {
 }
 p {
     line-height: 1.6;
+}
+/* Desktop */
+@media screen and (min-width: 600px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        padding: 8px;
+    }
+    h1 {
+        font-size: 72px;
+        padding: 0;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    header {
+       display: flex;
+       flex-direction: row;
+       display: flex;
+       justify-content: flex-start;
+       text-align: left;
+       align-items: flex-start;
+       padding: 90px 62px;
+    }
+    .funky-illo {
+        width: 480px;
+        height: 480px;
+        margin: 0 auto;
+    }
+    .banner-box {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 45vw;
+    }
+    .info {
+        max-width: 380px;
+    }
+    .menu {
+        display: none;
+        visibility: hidden;
+    }
+    .search {
+        display: none;
+        visibility: hidden;
+    }
+    .logo {
+        width: 210px;
+    }
+    ul {
+        list-style: none;
+    }
+    .desktop-nav {
+        visibility: visible;
+        display: flex;
+    }
+    li {
+        margin-right: 40px;
+    }
+    nav {
+        align-items: center;
+        padding: 4px 16px;
+    }
 }
