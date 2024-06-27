@@ -9,8 +9,6 @@ headerBox.addEventListener('click', function() {
 
 // Request 2: Click to show/hide menu 
 
-// TODO Open the menu display upon clicking 
-
 let menu = document.querySelector('.hamburger-menu')
 let openMenu = document.querySelector('.opened-menu')
 let exitMenu = document.querySelector('.exit-menu')
@@ -32,14 +30,16 @@ function toggleMenu() {
    
 }
 
+// TODO Open the menu display upon clicking 
 menu.addEventListener('click', function() {
     toggleMenu()
 })  
+
+// TODO Close the menu display upon clicking 'x' button 
 exitMenu.addEventListener('click', function() {
     toggleMenu()
 })
 
-// TODO Close the menu display upon clicking 'x' button 
 
 
 // Request 3: Click to show more content boxes 
