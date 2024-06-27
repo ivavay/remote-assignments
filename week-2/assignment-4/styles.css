@@ -13,12 +13,36 @@ nav {
     background-color: #EEE;
     font-size: 14px;
     padding: 16px;
+    
+}
+.opened-menu {
+    margin: 0;
+    background-color: white;
+    width: 300px;
+    display: none;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 100vh;
+
+}
+
+.exit-menu {
+    font-size: 40px;
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    
+}
+
+.exit {
+    width: 40px;
 }
 ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    display: flex;
 }
 li.nav-item {
     margin-right: 48px;
@@ -72,6 +96,7 @@ section {
         display: none;
         visibility: hidden;
     }
+   
     .hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -86,9 +111,18 @@ section {
 
 /* For screen sizes less than 500px */ 
 @media (max-width: 500px) {
+    li { 
+        font-size: 18px;
+        padding-top: 40px;
+    }
     .nav-item {
         display: none;
         visibility: hidden;
+    }
+    .min-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .hamburger-menu {
         display: flex;
