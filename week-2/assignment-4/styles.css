@@ -13,7 +13,6 @@ nav {
     background-color: #EEE;
     font-size: 14px;
     padding: 16px;
-    
 }
 .opened-menu {
     margin: 0;
@@ -96,7 +95,6 @@ section {
         display: none;
         visibility: hidden;
     }
-   
     .hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -113,11 +111,13 @@ section {
 @media (max-width: 500px) {
     li { 
         font-size: 18px;
-        padding-top: 40px;
     }
     .nav-item {
         display: none;
         visibility: hidden;
+    }
+    .li-items {
+        padding-top: 40px;
     }
     .min-menu {
         display: flex;
