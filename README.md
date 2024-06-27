@@ -13,6 +13,7 @@ Week 1 (6/17-6/23)
 Week 2 (6/24-6/30)
 - Assignment 1 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-1)
 - Assignment 2 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-2)
+- Assignment 3 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-3)
 
 🗒️ Takeaways:
 - Use `eval()` to evaluate a string as a math operation
