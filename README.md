@@ -9,3 +9,10 @@ Week 1 (6/17-6/23)
 - Tried developing mobile-first for the first time!
 - To do horizontal scroll in css, simply add `overflow:auto` and `white-space: nowrap` to your parent container
 - If a website doesn't let you save images, go to dev tools > applications > frames > images 
+
+Week 1 (6/24-6/30)
+- Assignment 1 - [Repo](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-1)
+- Assignment 2 - [Repo](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-2)
+
+🗒️ Takeaways:
+- Use `eval()` to evaluate a string as a math operation
