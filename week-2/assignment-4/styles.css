@@ -78,6 +78,14 @@ section {
     margin: 0 auto;
     flex-wrap: wrap;
 }
+.row-2 {
+    display: none;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
 .card {
     background-color: #8899AA;
     width: 27vw;

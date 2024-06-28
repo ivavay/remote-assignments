@@ -45,3 +45,9 @@ exitMenu.addEventListener('click', function() {
 // Request 3: Click to show more content boxes 
 
 // TODO Expand to show more content boxes upon clicking 'CTA'
+let ctaBtn = document.querySelector('.cta')
+let row2 = document.querySelector('.row-2')
+
+ctaBtn.addEventListener('click', function() {
+    row2.style.display="flex"
+})
