@@ -15,8 +15,10 @@ Week 2 (6/24-6/30)
 - Assignment 2 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-2)
 - Assignment 3 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-3)
 - Assignment 4 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-4) / [Live site](https://ivavay.github.io/remote-assignments/week-2/assignment-4/)
+- Assignment 5 (Advanced / Optional) - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-5)
 
 🗒️ Takeaways:
 - Use `eval()` to evaluate a string as a math operation
 - Use a toggle function for showing/hiding mobile menu 
+- Nested loops are helpful for comparing or doing operations with the current and next item/index
 
