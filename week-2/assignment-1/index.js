@@ -5,7 +5,7 @@ Can't use Math.max() or sort() */
 function max(numbers) {
     // Set the initial max number to the first item of array 
     let maxNum = numbers[0]
-	for (let i = 0; i < numbers.length; i++) {
+	for (let i = 1; i < numbers.length; i++) {
         // Compare to see if current looped item is bigger than the first item 
         // If yes, then that item becomes the max 
         if (numbers[i] > maxNum) {

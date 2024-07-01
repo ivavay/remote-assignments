@@ -7,7 +7,8 @@ function calculate(args) {
         return 'Not supported'
     } else {
         // Eval takes a string and use that string as a math operator
-        return eval(`${vals[0]} ${args.op} ${vals[1]}`)
+        // Teacher's note: using args.n1 and args.2 is more suitable to ensure it works regardless order of key: value pairs 
+        return eval(`${args.n1} ${args.op} ${args.n2}`)
     }
 }
 console.log(calculate({ n1: 2, n2: 3, op: '+' })); // expected output: 5

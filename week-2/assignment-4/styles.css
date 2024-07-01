@@ -98,7 +98,7 @@ section {
 }
 
 /* For screen sizes between 500px and 800px */ 
-@media (min-width: 500px) and (max-width: 800px) {
+@media (min-width: 500px) and (max-width: 799px) {
     .nav-item {
         display: none;
         visibility: hidden;
@@ -113,10 +113,18 @@ section {
         width: 32px;
         border: 1px solid black;
     }
+    .li-items {
+        padding-top: 40px;
+    }
+    .min-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
   }
 
 /* For screen sizes less than 500px */ 
-@media (max-width: 500px) {
+@media (max-width: 499px) {
     li { 
         font-size: 18px;
     }
