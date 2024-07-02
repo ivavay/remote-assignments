@@ -22,3 +22,9 @@ Week 2 (6/24-6/30)
 - Use a toggle function for showing/hiding mobile menu 
 - Nested loops are helpful for comparing or doing operations with the current and next item/index
 
+Week 3 (7/1-7/7)
+- Assignment 1 - Your first web server
+- Assignment 2 - Build backend API for frontend
+
+🗒️ Takeaways:
+- This `Object.keys(req.query).length === 0)` checks if a query is empty
