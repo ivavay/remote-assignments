@@ -10,8 +10,8 @@ app.get('/getData', (req, res) => {
   try {
     // Makes sure the number is an integer
     let number = parseInt(req.query.number);
-    // If query is not a number 
-    if(Number.isInteger(number)) {
+    // If query is a positive number
+    if(Number.isInteger(number) && number > 0) {
       const arrayItems = []
       // Loop through and add each index as a item in the array 
       for (let i = 1; i <= number; i++) {
@@ -21,8 +21,13 @@ app.get('/getData', (req, res) => {
       let calculation = arrayItems.join('+')
       // Sends the queried number as the '1+2+3+4+5' as a response 
       res.send(calculation)
+      // If no parameter, then...
+      // Checks if the req.query is empty
+    } else if (Object.keys(req.query).length === 0) {
+      throw new Error ('Lack of Parameter')
+      // If number parameter isn't an integer, then...
     } else {
-      throw new Error('Lack of Parameter')
+      throw new Error('Wrong Paramter')
     }
     
   }
