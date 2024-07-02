@@ -6,19 +6,29 @@ app.use(express.json())
 const port = 3000
 
 app.get('/getData', (req, res) => {
+  // Try and catch works now
   try {
-    let number  = req.query.number;
-    const arrayItems = []
-    for (let i = 1; i <= number; i++) {
-        arrayItems.push(i)
+    // Makes sure the number is an integer
+    let number = parseInt(req.query.number);
+    // If query is not a number 
+    if(Number.isInteger(number)) {
+      const arrayItems = []
+      // Loop through and add each index as a item in the array 
+      for (let i = 1; i <= number; i++) {
+          arrayItems.push(i)
+      }
+      // Join the items in the array via '+'
+      let calculation = arrayItems.join('+')
+      // Sends the queried number as the '1+2+3+4+5' as a response 
+      res.send(calculation)
+    } else {
+      throw new Error('Lack of Parameter')
     }
-    let calculation = arrayItems.join('+')
-    // Sends the queried number as the '1+2+3+4+5' as a response 
-    res.send(calculation)
+    
   }
 
  catch (error) {
-    res.send('Lack of Parameter')
+    res.send(error.message)
     }
   } 
 )
