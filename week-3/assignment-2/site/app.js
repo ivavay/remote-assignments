@@ -17,10 +17,11 @@ app.get('/getData', (req, res) => {
       for (let i = 1; i <= number; i++) {
           arrayItems.push(i)
       }
-      // Join the items in the array via '+'
-      let calculation = arrayItems.join('+')
+      // Add the items together 
+      let calculation = arrayItems.reduce((sum, value) => sum + value, 0)
+      // calculation = eval(calculation)
       // Sends the queried number as the '1+2+3+4+5' as a response 
-      res.send(calculation)
+      res.send("Sum: " + calculation)
       // If no parameter, then...
       // Checks if the req.query is empty
     } else if (Object.keys(req.query).length === 0) {
