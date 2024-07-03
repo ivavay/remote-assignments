@@ -27,7 +27,7 @@ app.get('/getData', (req, res) => {
       throw new Error ('Lack of Parameter')
       // If number parameter isn't an integer, then...
     } else {
-      throw new Error('Wrong Paramter')
+      throw new Error('Wrong Paramter!!')
     }
     
   }
