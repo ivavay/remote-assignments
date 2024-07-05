@@ -7,13 +7,15 @@
     <link rel="stylesheet" type="text/css" href="styles.css" /> 
 </head>
 <body>
-    <form>
-        <input placeholder = "Enter a positive number" id="number" type="text" />
+    <form action="/sum" method="post">
+        <input placeholder = "Enter a positive number" id="number" name="inputNum" type="text" />
         <input type="submit" value="Submit" id="submit" />
     </form>
     <div>
-        <span id="message">Shows the message</span>
+        <span id="message">
+           <%= locals?.message %>
+        </span>
     </div>
-    <script src="index.js"></script>
+    <!-- <script src="index.js"></script> -->
 </body>
 </html>
