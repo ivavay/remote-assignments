@@ -12,25 +12,22 @@ const port = 3000
 app.set('view engine', 'ejs')
 app.set('views', __dirname);
 
-// Serving static files in experss
+// Serving static files in express
 app.use(express.static('view'))
 
-
+// Gets the sum page 
 app.get('/sum', (req, res) => {
   res.render('sum')
   } 
 )
-
+// Renders the form and processes it 
 app.post('/sum', (req, res) => {
-  // Returns a JSON like { number: '4' } 
-  // res.send(req.body)
-  // Try and catch works now
   try {
     // Makes sure the number is an integer
-    const number = req.body.inputNum;
+    const number = parseInt(req.body.inputNum);
     
     // If query is a positive number
-    if (number > 0) {
+    if (Number.isInteger(number) && number > 0) {
       const arrayItems = []
       // Loop through and add each index as a item in the array 
       for (let i = 1; i <= number; i++) {
@@ -41,13 +38,12 @@ app.post('/sum', (req, res) => {
       let calculation = arrayItems.reduce((sum, value) => sum + value, 0)
   
       // Sends the queried number as the '1+2+3+4+5' as a response 
-      // Convert calculation value to a string
-      // res.json(' + calculation')
       console.log(calculation)
+      // Renderse the message
       res.render('sum', {'message': calculation})
-      // res.render('sum', {'sum': calculation})
-
-    } else if (Object.keys(req.body.number).length === 0) {
+  
+      // If there is no parameter, meaning the form submits nothing 
+    } else if (Object.keys(req.body.inputNum).length === 0) {
       throw new Error ('Lack of Parameter')
     
       // If number parameter isn't an integer, then...
