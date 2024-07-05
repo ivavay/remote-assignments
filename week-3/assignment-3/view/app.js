@@ -1,14 +1,17 @@
 const express = require('express')
 const app = express()
+
 // Body parser to parse form data 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
+
 // Parse requests with JSON payloads
 app.use(express.json())
+
 // Define the server code 
 const port = 3000
+
 // Set default engine 
-// app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs')
 app.set('views', __dirname);
 
@@ -37,14 +40,14 @@ app.post('/sum', (req, res) => {
       // Add the items together 
       let calculation = arrayItems.reduce((sum, value) => sum + value, 0)
   
-      // Sends the queried number as the '1+2+3+4+5' as a response 
       console.log(calculation)
-      // Renderse the message
+
+      // Renders the calculated sum as the message
       res.render('sum', {'message': calculation})
   
       // If there is no parameter, meaning the form submits nothing 
     } else if (Object.keys(req.body.inputNum).length === 0) {
-      throw new Error ('Lack of Parameter')
+      throw new Error ('Lack of Parameter!!')
     
       // If number parameter isn't an integer, then...
     } else {
