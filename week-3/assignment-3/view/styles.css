@@ -1,3 +1,41 @@
-body {
+#message {
     color: blue;
+}
+input#number {
+    padding: 16px;
+    margin-right: 8px;
+    border: 1px solid rgb(121, 211, 234);
+    font-size: 32px;
+}
+::placeholder {
+    color: rgb(188, 188, 188);
+}
+input#submit {
+    padding:  16px 24px;
+    background-color: rgb(121, 211, 234);
+    border: none;
+    border-radius: 10px;
+    font-size: 32px;
+    color: white
+}
+form {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.msg-container {
+    padding: 40px;
+    border: 1px solid rgb(121, 211, 234);;
+    border-radius: 10;
+}
+#message {
+    font-size: 60px;
+    color: rgb(121, 211, 234);
 }

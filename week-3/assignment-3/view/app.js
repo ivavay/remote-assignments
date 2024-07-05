@@ -52,7 +52,7 @@ app.post('/sum', (req, res) => {
     }
   }
  catch (error) {
-    res.send(error.message)
+    res.render('sum', {'message': error.message})
     }
 })
 
