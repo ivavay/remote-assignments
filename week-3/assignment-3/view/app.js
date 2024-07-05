@@ -51,7 +51,7 @@ app.post('/sum', (req, res) => {
     
       // If number parameter isn't an integer, then...
     } else {
-      throw new Error('Wrong Paramter!!')
+      throw new Error('Wrong Parameter!!')
     }
   }
  catch (error) {
