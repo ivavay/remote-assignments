@@ -25,6 +25,10 @@ Week 2 (6/24-6/30)
 Week 3 (7/1-7/7)
 - Assignment 1 - Your first web server
 - Assignment 2 - Build backend API for frontend
+- Assignment 3 - Connect to Backend API by AJAX
 
 🗒️ Takeaways:
 - This `Object.keys(req.query).length === 0)` checks if a query is empty
+- `<%= locals?.message %>` is helpful for injecting a variable into EJS 
+- Assignment 3 was a bit hard to wrap my head around but I mainly used GET to render the sum form page and POST to do the logic with the inputted number and return with the value
+- Needed to use bodyparser to process form data 
