@@ -23,9 +23,10 @@ Week 2 (6/24-6/30)
 - Nested loops are helpful for comparing or doing operations with the current and next item/index
 
 Week 3 (7/1-7/7)
-- Assignment 1 - Your first web server
-- Assignment 2 - Build backend API for frontend
-- Assignment 3 - Connect to Backend API by AJAX
+- Assignment 1 - Your first web server - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-3/assignment-1)
+- Assignment 2 - Build backend API for frontend - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-3/assignment-2)
+- Assignment 3 - Connect to Backend API by AJAX - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-3/assignment-3)
+- Assignment 4 - Deploy Web Server (Optional)
 
 🗒️ Takeaways:
 - This `Object.keys(req.query).length === 0)` checks if a query is empty
