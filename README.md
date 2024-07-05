@@ -26,10 +26,11 @@ Week 3 (7/1-7/7)
 - Assignment 1 - Your first web server - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-3/assignment-1)
 - Assignment 2 - Build backend API for frontend - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-3/assignment-2)
 - Assignment 3 - Connect to Backend API by AJAX - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-3/assignment-3)
-- Assignment 4 - Deploy Web Server (Optional)
+- Assignment 4 - Deploy Web Server (Advance Optional) - [Live site](https://remote-assignments-week3.onrender.com/sum) 
+
 
 🗒️ Takeaways:
 - This `Object.keys(req.query).length === 0)` checks if a query is empty
 - `<%= locals?.message %>` is helpful for injecting a variable into EJS 
 - Assignment 3 was a bit hard to wrap my head around but I mainly used GET to render the sum form page and POST to do the logic with the inputted number and return with the value
-- Needed to use bodyparser to process form data 
+- Needed to install and use bodyparser to process form data 
