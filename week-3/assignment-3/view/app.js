@@ -7,6 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Parse requests with JSON payloads
 app.use(express.json())
+app.use(bodyParser.json());
 
 // Define the server code 
 const port = 3000
@@ -23,12 +24,12 @@ app.get('/sum', (req, res) => {
   res.render('sum')
   } 
 )
+
 // Renders the form and processes it 
 app.post('/sum', (req, res) => {
+  // Makes sure the number is an integer
+  const number = parseInt(req.body.number);
   try {
-    // Makes sure the number is an integer
-    const number = parseInt(req.body.inputNum);
-    
     // If query is a positive number
     if (Number.isInteger(number) && number > 0) {
       const arrayItems = []
@@ -40,13 +41,14 @@ app.post('/sum', (req, res) => {
       // Add the items together 
       let calculation = arrayItems.reduce((sum, value) => sum + value, 0)
   
-      console.log(calculation)
+      // console.log(calculation)
 
       // Renders the calculated sum as the message
-      res.render('sum', {'message': calculation})
-  
+      res.json({ sum: calculation })
+
       // If there is no parameter, meaning the form submits nothing 
-    } else if (Object.keys(req.body.inputNum).length === 0) {
+    } else if (Object.keys(req.body.number).length === 0) {
+      console.log('No parameter')
       throw new Error ('Lack of Parameter!!')
     
       // If number parameter isn't an integer, then...
@@ -55,7 +57,9 @@ app.post('/sum', (req, res) => {
     }
   }
  catch (error) {
-    res.render('sum', {'message': error.message})
+    // res.render('sum', {message: error })
+    console.log('HEYLO')
+    res.json({ message : error.message })
     }
 })
 
