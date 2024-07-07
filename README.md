@@ -35,4 +35,4 @@ Week 3 (7/1-7/7)
 - Assignment 3 was a bit hard to wrap my head around but I mainly used GET to render the sum form page and POST to do the logic with the inputted number and return with the value
 - Needed to install and use bodyparser to process form data 
 - Using AJAX / Fetch API means that you can submit/process a form without refreshing the page
-
+- To start server, `node view/app.js`
