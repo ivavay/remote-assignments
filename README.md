@@ -39,8 +39,8 @@ Week 3 (7/1-7/7)
 
 Week 4 (7/8-7/14)
 - Assignment 1 - Callback Function - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-1)
-- Assignment 2 - HTML DOM and AJAX - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-2)
+- Assignment 2 - HTML DOM and AJAX - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-2) / [Live site](https://ivavay.github.io/remote-assignments/week-4/assignment-2/)
 
 
 🗒️ Takeaways:
-- Used forEach inside of for...in to loop through rendering each item's values
+- Used `forEach` inside of `for...in` to loop through rendering each object item's values
