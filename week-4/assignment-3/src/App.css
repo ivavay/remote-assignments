@@ -20,7 +20,10 @@ h2 {
   height: 100vh;
 
 }
-
+nav {
+  background-color: #EEE;
+  padding: 16px;
+}
 .exit-menu {
   font-size: 40px;
   display: none;
@@ -37,8 +40,6 @@ ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
-  background-color: #EEE;
-  padding: 16px;
 }
 li.nav-item {
   margin-right: 48px;
