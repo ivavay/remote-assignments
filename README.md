@@ -38,7 +38,7 @@ Week 3 (7/1-7/7)
 - To start server, `node view/app.js`
 
 Week 4 (7/8-7/14)
-- Assignment 1 - Callback Function
+- Assignment 1 - Callback Function [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-1)
 
 
 🗒️ Takeaways:
