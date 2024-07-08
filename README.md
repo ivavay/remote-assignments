@@ -36,3 +36,9 @@ Week 3 (7/1-7/7)
 - Needed to install and use bodyparser to process form data 
 - Using AJAX / Fetch API means that you can submit/process a form without refreshing the page
 - To start server, `node view/app.js`
+
+Week 4 (7/8-7/14)
+- Assignment 1 - Callback Function
+
+
+🗒️ Takeaways:
