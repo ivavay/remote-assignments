@@ -15,7 +15,7 @@ Week 2 (6/24-6/30)
 - Assignment 2 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-2)
 - Assignment 3 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-3)
 - Assignment 4 - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-4) / [Live site](https://ivavay.github.io/remote-assignments/week-2/assignment-4/)
-- Assignment 5 (Advanced / Optional) - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-5)
+- Assignment 5 (Advanced Optional) - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-2/assignment-5)
 
 🗒️ Takeaways:
 - Use `eval()` to evaluate a string as a math operation
@@ -40,7 +40,14 @@ Week 3 (7/1-7/7)
 Week 4 (7/8-7/14)
 - Assignment 1 - Callback Function - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-1)
 - Assignment 2 - HTML DOM and AJAX - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-2) / [Live site](https://ivavay.github.io/remote-assignments/week-4/assignment-2/)
-
+- Assignment 3 - Re-implement Layout React 
+- Assignment 4 - HTML DOM and AJAX (Advanced Optional)
+- Assignment 5 - Counter by React (Advanced Optional)
 
 🗒️ Takeaways:
 - Used `forEach` inside of `for...in` to loop through rendering each object item's values
+- Common usages of hooks 
+    - useState is the most often used hook
+    - useEffect for fetching data via API and re-rendering after state changes
+    - useRef for directly changing DOM without re-renderes or state changes 
+    - context api for passing props at the top-level 
