@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import './App.css'
-import Nav from './components/Nav'
-import Header from './components/Header'
-import Section from './components/Section'
+import "./App.css";
+import Nav from "./components/Nav";
+import Header from "./components/Header";
+import Section from "./components/Section";
 
 function App() {
   return (
@@ -10,9 +9,8 @@ function App() {
       <Nav />
       <Header />
       <Section />
-
     </>
-  )
+  );
 }
 
-export default App
+export default App;
