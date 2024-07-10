@@ -9,7 +9,7 @@ export default function Card({name, description, topics, url, visibility}) {
             
             <div className="tags">
             { 
-                topics && topics.map((item, key) => (
+            topics.map((item, key) => (
                     <span className="tag" key={key}>{item}</span>
                 ))
             }  
