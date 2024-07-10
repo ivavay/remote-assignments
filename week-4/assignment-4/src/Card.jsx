@@ -1,10 +1,10 @@
-export default function Card({name, description, topics}) {
+export default function Card({name, description, topics, url, visibility}) {
     // Place props in {}!!!
     // Assign keys to each item 
     return(
         <div className="card">
-            <span className="title">{name}</span>
-            <span className="public-tag">Public</span>
+            <a href={url} ><span className="title">{name}</span></a>
+            <span className="public-tag">{visibility}</span>
             <p>{description}</p>
             
             <div className="tags">

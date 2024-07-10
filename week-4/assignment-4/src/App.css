@@ -16,7 +16,9 @@ body {
   margin-right: 8px;
   margin-top: 8px;
 }
-
+a {
+  color: #2976DE;
+}
 .title {
   font-size: 26px;
   font-weight: 700;

@@ -31,6 +31,8 @@ function App() {
           name={item.name}
           description={item.description}
           topics={item.topics}
+          url={item.html_url}
+          visibility={item.visibility}
         />
       ))
     }

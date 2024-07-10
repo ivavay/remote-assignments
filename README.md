@@ -40,9 +40,9 @@ Week 3 (7/1-7/7)
 Week 4 (7/8-7/14)
 - Assignment 1 - Callback Function - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-1)
 - Assignment 2 - HTML DOM and AJAX - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-2) / [Live site](https://ivavay.github.io/remote-assignments/week-4/assignment-2/)
-- Assignment 3 - Re-implement Layout React - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-3) / Live Site (TBD)
-- Assignment 4 - HTML DOM and AJAX (Advanced Optional)
-- Assignment 5 - Counter by React (Advanced Optional)
+- Assignment 3 - Re-implement Layout React - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-3) / [Live site](https://week-4-assignment-3.vercel.app/)
+- Assignment 4 - HTML DOM and AJAX (Advanced Optional) - [Live site](https://week-4-assignment-4.vercel.app/)
+- Assignment 5 - Counter by React (Advanced Optional) 
 
 🗒️ Takeaways:
 - Used `forEach` inside of `for...in` to loop through rendering each object item's values
@@ -51,3 +51,4 @@ Week 4 (7/8-7/14)
     - useEffect for fetching data via API and re-rendering after state changes
     - useRef for directly changing DOM without re-renders or state changes 
     - context api for passing props at the top-level 
+- To keep span elements from overlapping, change to `display: inline-block;`
