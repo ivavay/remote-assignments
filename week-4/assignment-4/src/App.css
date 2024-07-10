@@ -1,0 +1,61 @@
+* {
+  margin: 0
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+  color: #2976DE
+}
+.tag {
+  background-color: #DDF5FF;
+  color: #2976DE;
+  padding: 6px 8px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.public-tag {
+  border: 1px solid rgb(198, 198, 198);
+  color: grey;
+  border-radius: 30px;
+  padding: 0 6px;
+  font-size: 12px;
+  margin: 0 8px;
+}
+p {
+  font-size: 16px;
+  color: grey;
+  padding: 16px 0;
+}
+.card {
+  border: 0.7px solid rgb(230, 230, 230);
+  border-radius: 5px;
+  padding: 24px 16px;
+  width: 50vw;
+}
+
+button {
+  color: #2976DE;
+  font-weight: 400;
+  border: none;
+  font-size: 16px;
+  background-color: white;
+  padding: 16px 0;
+}
+
+.app {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

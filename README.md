@@ -40,7 +40,7 @@ Week 3 (7/1-7/7)
 Week 4 (7/8-7/14)
 - Assignment 1 - Callback Function - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-1)
 - Assignment 2 - HTML DOM and AJAX - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-2) / [Live site](https://ivavay.github.io/remote-assignments/week-4/assignment-2/)
-- Assignment 3 - Re-implement Layout React 
+- Assignment 3 - Re-implement Layout React - [Code](https://github.com/ivavay/remote-assignments/tree/main/week-4/assignment-3) / Live Site (TBD)
 - Assignment 4 - HTML DOM and AJAX (Advanced Optional)
 - Assignment 5 - Counter by React (Advanced Optional)
 
@@ -49,5 +49,5 @@ Week 4 (7/8-7/14)
 - Common usages of hooks 
     - useState is the most often used hook
     - useEffect for fetching data via API and re-rendering after state changes
-    - useRef for directly changing DOM without re-renderes or state changes 
+    - useRef for directly changing DOM without re-renders or state changes 
     - context api for passing props at the top-level 
