@@ -27,8 +27,6 @@ a {
 .public-tag {
   border: 1px solid rgb(198, 198, 198);
   color: grey;
-  border-radius: 30px;
-  padding: 0 6px;
   font-size: 12px;
   margin: 0 8px;
 }

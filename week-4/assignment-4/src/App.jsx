@@ -34,8 +34,7 @@ function App() {
           url={item.html_url}
           visibility={item.visibility}
         />
-      ))
-    }
+      ))}
       <button onClick={updateQuery}>More</button>
     </div>
   );

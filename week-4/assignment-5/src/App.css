@@ -1,0 +1,19 @@
+.plus-box {
+  padding: 8px 32px;
+  border: 1px solid black;
+}
+span {
+  margin-left: 32px;
+  font-size: 24px;
+}
+.counter {
+  margin: 40px 0;
+}
+.add-all {
+  margin-top: 40px;
+  margin-left: 32px;
+  font-size: 24px;
+  padding: 8px 32px;
+  border: 1px solid black;
+  display: inline-block;
+}
