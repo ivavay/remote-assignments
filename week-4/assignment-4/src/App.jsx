@@ -7,14 +7,14 @@ function App() {
   // Use query to move to the page number
   // Update query to next number
   function updateQuery() {
-    setQuery((prevQuery) => prevQuery + 5);
+    setQuery(query + 5);
     // console.log(query);
     console.log("clicked");
   }
   useEffect(() => {
     console.log("useEffect called!");
     // console.log(query);
-    fetch(`https://api.github.com/orgs/facebook/repos?per_page=${query}&page=1`)
+    fetch(`https://api.github.com/orgs/facebook/repos?per_page=5&page=${query}`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
