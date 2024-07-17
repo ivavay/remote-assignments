@@ -3,9 +3,10 @@ function delayedResult(n1, n2, delayTime, callback) {
   // Declare a variable and assign it to adding operation
   let result = n1 + n2;
   // Executes the callback
-  callback(result);
   // setTimeout delays the result by delayTime
-  setTimeout(callback, delayTime, n1, n2);
+  setTimeout(() => {
+    callback(result);
+  }, delayTime);
 }
 delayedResult(4, 5, 3000, function (result) {
   console.log(result);
