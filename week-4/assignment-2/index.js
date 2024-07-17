@@ -11,7 +11,6 @@ function ajax(url) {
 }
 
 function render(data) {
-  ajax(url).then((data) => {
     // Convert to JSON
     let newData = JSON.stringify(data);
     // console.log(newData)
@@ -34,7 +33,6 @@ function render(data) {
         element.innerHTML = data[item].price;
       });
     }
-  });
 }
 const url =
   "https://remote-assignment.s3.ap-northeast-1.amazonaws.com/products";
